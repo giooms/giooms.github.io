@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: rgb(252, 252, 252);
+}
+
+
+
+.background {
+    height: 100vh;
+    background-image: linear-gradient(135deg, #00557E 10% , #f44336 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.dock {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0.2rem 0.5rem 0 0.5rem;
+    bottom: 3%;
+    left: 50%;
+    height: 65px;
+    transform: translateX(-50%);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--color-white-200);
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    z-index: 10;
+  }
+
+  @media screen and (min-width: 600px){
+    .text {
+      padding: 120px 0;
+    }
+  }  
+
+  @media screen and (max-width: 700px){
+    .dock {
+      border-radius: 20px;
+    }
+    .hidden {
+      display: none;
+      width: 0%;
+      padding: 0px;
+      visibility: collapse;
+    }
+    .hidden::after{
+      width: 0%;
+      padding: 0px;
+
+    }
+    .icon{
+      padding: 0px;
+    }
+    .dock {
+      grid-template-columns: repeat(4);
+    }
+    .true {
+      display: block;
+      align-items: center;
+      padding: 1px 6px;
+    }
+
+    .dock .icon:nth-child(5):hover::after {
+      visibility: hidden;
+    }
+    
+    .dock .icon:nth-child(7):hover::after {
+      visibility: hidden;
+    }
+    
+    .dock .icon:nth-child(8):hover::after {
+      visibility: hidden;
+    }
+    
+    .dock .icon:nth-child(9):hover::after {
+      visibility: hidden;
+    }
+    
+    .text {
+      padding: 40px 16px 120px 16px;
+    }
+    .flex{
+      justify-content: center;
+    }
+
+  }
+  
+  .dock .point {
+    width: 6px;
+    height: 6px;
+    margin: 0;
+    background: #f08080;
+    border-radius: 50%;
+    display: none;
+    animation: top-to-bottom 0.3s;
+    transition: 0.3s;
+  }
+  
+  .dock hr {
+    width: 1px;
+    height: 48px;
+    margin: 0 4px;
+    background:#2c2c2c;
+  }
+  
+  .dock .icon {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+    transform: translate3d(0px, 0%, 0px);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .dock .icon::after {
+    font-size: 15px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.39);
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 95px;
+    height: 25px;
+    padding: 4px 3px 10px;
+    border-radius: 8px;
+    font-family: 'lexend', sans-serif;
+    font-weight: 700;
+    clip-path: polygon(
+      100% 0%,
+      100% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 80%,
+      43% 80%,
+      50% 101%,
+      57% 80%,
+      100% 80%,
+      100% 0%
+    );
+  }
+
+  .dock .icon:nth-child(1):hover::after {
+    content: 'About me';
+  }
+  
+  .dock .icon:nth-child(2):hover::after {
+    content: 'CV';
+  }
+  
+  .dock .icon:nth-child(3):hover::after {
+    content: 'Projects';
+  }
+  
+  .dock .icon:nth-child(4):hover::after {
+    content: 'Writing';
+  }
+  
+  .dock .icon:nth-child(5):hover::after {
+    content: 'Pictures';
+  }
+  
+  .dock .icon:nth-child(7):hover::after {
+    content: 'Twitter';
+  }
+  
+  .dock .icon:nth-child(8):hover::after {
+    content: 'Linkedin';
+  }
+  
+  .dock .icon:nth-child(9):hover::after {
+    content: 'GitHub';
+  }
+  .dock .icon:nth-child(10):hover::after {
+    content: 'Mail';
+  }
+  
+  .dock .icon img {
+    width: 3.6rem;
+    transition: 0.2s;
+    transform: translateY(-2.5px);
+  }
+  
+  .dock .icon:hover img{
+    margin: 0 0 40px 0;
+    width: 7.1rem;
+  }
+  .dock .icon:hover + .icon img{
+    width: 5.6rem;
+    margin: 0 0 25px 0;
+  }
+  
+  .dock .icon img:active {
+    filter: brightness(0.6) drop-shadow(0 0 10px #2c2c2c);
+  }
+
+  .text {
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    max-width: 720px;
+    text-align: left;
+    color:hsl(0 0% 43.5%);
+    font-size: 15px;
+  }
+  .text h1{
+    font-family: 'Lusitana', serif;
+    color: #2c2c2c;
+    margin: 0 0 15px 0 ;
+    font-size: 30px;
+  }
+  .séparation {
+    width: 48px;
+    height:1px;
+    background:#2c2c2c;
+    margin: 24px 0 ;
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  .medium, .substack {
+    position: relative;
+    width: 328px;
+    height:298px;
+    margin: 10px 10px;
+    border-radius: 15px;
+    border-color: #E3E3E3;
+    border-style: dotted;
+  }
+  .text img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

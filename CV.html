@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <title>Gilles Ooms</title>
+      <link rel="stylesheet" href='CV_style.css'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="images/favicon.png">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Lusitana:wght@400;700&display=swap');
+      </style>    
+    </head>
+
+    <body>
+        <div class="dock">
+          <button class="icon">
+            <a href="index.html"><img src="images/About me.png" alt="About me" class="true" /></a>
+          </button>
+          <button class="icon">
+            <a href="CV.html"><img href="CV.html"src="images/CV_a.png" alt="CV" class="true" /></a>
+          </button>
+          <button class="icon">
+            <a href="Projects.html"><img src="images/Projects.png" alt="Projects" class="true" /></a>
+          </button>
+          <button class="icon">
+            <a href="Writing.html"><img src="images/Writing.png" alt="Writing" class="true"/></a>
+          </button>   
+          <button class="icon">
+            <a href="Pictures.html"><img src="images/Pictures.png" alt="Pictures" class="hidden" /></a>
+          </button> 
+          <hr class="hidden" id="column" />
+          <button class="icon">
+            <a href="https://twitter.com/gilles_ooms" target="_blank">
+            <img
+              src="images/Twitter.png"
+              alt="Twitter"
+              class="hidden"
+            />
+          </a>
+          </button>
+          <button class="icon">
+              <a href="https://www.linkedin.com/in/gilles-ooms/" target="_blank"><img
+                src="images/LinkedIn.png"
+                alt="LinkedIn"
+                class="hidden"
+              /></a>
+            </button>
+            <button class="icon">
+                <a href="https://github.com/giooms"><img
+                  src="images/github.png"
+                  alt="GitHub"
+                  class="hidden"
+                /></a>
+            <button class="icon">
+              <a href="mailto:gillesooms@outlook.com"><img
+                src="images/Mail.png"
+                alt="Mail"
+                class="hidden"
+              /></a>
+              <hr class="point" id="point-terminal" />
+            </button>
+        </div>
+            <!--DOCK end-->
+
+
+      <section class="text">
+        <div class="title">
+            <h1>A brief history of what I've done so far</h1>
+
+            <div class="download">
+            <a href="images/CV_GillesOoms.pdf" download><b><u>Download</u></b></a> my CV (last edited on January 7, 2022)
+            </div>
+
+            <hr class="séparation">
+
+            <button autofocus id="show_all" onclick="show_all()">all</button>
+            <button id="show_ed" onclick="show_ed()">education</button>
+            <button id="show_exp" onclick="show_exp()">experience</button>
+
+        </div>
+
+
+        <section class="timeline_area section_padding_130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Timeline Area-->
+                        <div class="apland-timeline-area">
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="all ed exp timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Near Future</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <a href="Writing.html" target="a_blank"><img src="images/favicon.png" width="24px" height="24px"></a>
+                                            <div class="timeline-text">
+                                                <h6>66 Days of Data Science</h6>
+                                                <p>Participation to the challenge.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <a href="https://www.citizensofwallonia.be/" target="a_blank"><img src="images/hackathon.png" width="24px" height="24px"></a>
+                                            <div class="timeline-text">
+                                                <h6>Citizens of Wallonia</h6>
+                                                <p>Integration of the team coached by IBM.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 all ed">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <a href="https://www.csus.edu/" target="a_blank"><img src="images/sacstate.png" width="24px" height="24px"></a>
+                                            <div class="timeline-text">
+                                                <h6>UC Sacramento State</h6>
+                                                <p>Erasmus from August to December.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-timeline-area">
+                                <div class="all exp timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Feb. 2022 </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <a href="https://www.programmes.uliege.be/cocoon/20212022/en/cours/INFO0076-1.html" target="a_blank"><img src="images/uliege_logo.png" width="22px" height="22px"></a> 
+                                            <div class="timeline-text">
+                                                <h6>Student instructor</h6>
+                                                <p>Explanations and assistance for students of the Computing in Management Engineering course at HEC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="all exp timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Sep. 2021</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <a href="https://nhitec.com/en" target="a_blank"><img src="images/nhitec.png" width="auto" height="24px"></a>
+                                            <div class="timeline-text">
+                                                <h6>N-HiTec's PR Administrator</h6>
+                                                <p>In charge of workshops, partnerships and conferences.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <a href="https://www.programmes.uliege.be/cocoon/20212022/en/cours/PHYS0956-3.html" target="a_blank"><img src="images/uliege_logo.png" width="22px" height="22px"></a> 
+                                            <div class="timeline-text">
+                                                <h6>Student instructor</h6>
+                                                <p>Explanations and assistance for students of the Physics 1 course at HEC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                              <div class="all ed exp timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                  <p>Sep. 2020</p>
+                              </div>
+                              <div class="row">
+                                  <div class="col-12 col-md-6 col-lg-4 all ed">
+                                      <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                        <a href="https://www.facsa.uliege.be/cms/c_3112656/en/facsa" target="a_blank"><img src="images/uliege_logo.png" width="22px" height="22px"></a>  
+                                        <div class="timeline-text">
+                                              <h6>Enrolment in additional courses</h6>
+                                              <p> Prerequisites of the Master of Civil Engineering in Computer Science.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-4 all exp">
+                                      <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                        <a href="https://nhitec.com/en" target="a_blank"><img src="images/nhitec.png" width="auto" height="24px"></a>
+                                        <div class="timeline-text">
+                                              <h6>Member of N-HiTec</h6>
+                                              <p>Junior Entreprise specialized in computer science, based in the Faculty of Applied Sciences of ULiège.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class=" all ed timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Sep. 2019 </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 all ed">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <a href="http://www.hec.uliege.be/en/home" target="a_blank"><img src="images/uliege_logo.png" width="22px" height="22px"></a>
+                                            <div class="timeline-text">
+                                                <h6>Start at ULiège</h6>
+                                                <p>Joined HEC Liège for a Business Engineering bachelor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="all ed timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Jun. 2019 </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 all ed">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <a href="https://www.ecah.be/college/" target="a_blank"><img src="images/ecah.png" width="20px" height="20px"></a>
+                                            <div class="timeline-text">
+                                                <h6>High school graduation</h6>
+                                                <p>Dutch immersion with math and latin majors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Timeline Content-->
+                            <div class="single-timeline-area">
+                                <div class="all exp timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Previously</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-text">
+                                                <h6>Prix Gabriel Ringlet (2019)</h6>
+                                                <p>High school thesis award from Gabriel Ringlet and Amélie Nothomb.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 all exp">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <a href="https://sparkoh.be/projet-robotixs/robotixs-junior/" target="a_blank"><img src="images/robotix.png" width="20px" height="20px"></a>
+                                            <div class="timeline-text">
+                                                <h6>Robotix European finalist (2015)</h6>
+                                                <p>Building and automating a robot to perform tasks. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+      </section>
+      <script>
+        //find all elements tagged "red"
+        var exp = document.querySelectorAll('.exp');
+
+        //find all elements tagged "blue"
+        var ed = document.querySelectorAll('.ed');
+
+        //find all elements with "item" class
+        var alls = document.querySelectorAll('.all');
+
+        //function to initially loop through all items and hide them
+        function hide_init(){
+        for (var i = 0; i < alls.length; ++i) { 
+        alls[i].style.display = 'none'; 
+        }
+        }
+
+        function show_exp(){  
+        //call the inital hide function
+        hide_init();
+        //loop through red-tagged items and show them  
+        for (var i = 0; i < exp.length; ++i) { 
+        exp[i].style.display = 'inline-flex'; 
+        } 
+        }
+
+        function show_ed(){  
+        //call the inital hide function
+        hide_init();
+        //loop through blue-tagged items and show them  
+        for (var i = 0; i < ed.length; ++i) { 
+        ed[i].style.display = 'inline-flex'; 
+        } 
+        }
+
+        function show_all(){  
+        //loop through all items and show them
+        for (var i = 0; i < alls.length; ++i) { 
+        alls[i].style.display = 'inline-flex'; 
+        } 
+        }
+      </script>
+  </body>
+</html>
