@@ -239,13 +239,13 @@ body {
   flex-wrap: wrap;
   
 }
-.medium, .description1 {
+.webdev, .description1, .unity, .description2  {
   position: relative;
   width: 328px;
   height:298px;
   border-radius: 15px;
 }
-.medium{
+.webdev, .unity{
   border-color: #E3E3E3;
   border-style: dotted;
   margin: 10px 10px;
@@ -256,7 +256,13 @@ body {
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease ;
 }
-.description1 p{
+.description2{
+  background: rgba(214, 214, 214, 0.315);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease ;
+}
+.description1 p, .description2 p{
   margin: 0 10px;
   position: absolute;
   bottom: -20px;
@@ -264,12 +270,28 @@ body {
   transition: bottom ease 0.5s;
   color:hsl(0 0% 43.5%);
 }
-.medium:hover .description1{
+.webdev:hover .description1{
   visibility: visible;
   opacity: 1;
 }
-.medium:hover .description1 p{
+.webdev:hover .description1 p{
   bottom: 2%;
+}
+.unity:hover .description2{
+  visibility: visible;
+  opacity: 1;
+}
+.unity:hover .description2 p{
+  bottom: 2%;
+}
+.webdev, .unity {
+  position: relative;
+  width: 328px;
+  height:298px;
+  margin: 10px 10px;
+  border-radius: 15px;
+  border-color: #E3E3E3;
+  border-style: dotted;
 }
 .text img{
   position: absolute;
