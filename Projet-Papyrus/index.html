@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-Papyrus</title>
+    <link rel="stylesheet" href="index-style.css">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/detectDevice.js"></script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <details>
+            <summary></summary>
+            <nav class="menu">
+              <a class="link" href="index.html" id="menu1_header"></a>
+              <a class="link" href="#link" id="menu2_header"></a>
+              <a class="link" href="about.html" id="menu3_header"></a>
+              <a class="link" href="rights.html" id="menu4_header"></a>
+              <a class="def" href="#link">
+                    <button onclick="switchLanguage('en')"><img src="img/uk.png" width="30px"></button>
+                    <button onclick="switchLanguage('fr')"><img src="img/fr.png" width="30px"></button>
+              </a>
+            </nav>
+        </details>
+
+        <a href="http://web.philo.ulg.ac.be/cedopal/" target="_blank">
+            <img src="img/CEDOPAL_bg.png" alt="Cedopal" width="254px">
+        </a>
+
+        <a href="https://www.uliege.be/cms/c_8699436/fr/uliege" target="_blank">
+            <img src="img/uliege.png" alt="University of Liège" width="178px">
+        </a>
+    </header>
+
+    <div class="main">
+        
+        <a href="http://web.philo.ulg.ac.be/cedopal/" target="_blank">
+            <div class="link_cedopal">
+                <img class="link_cedopal1" src="img/link_icon.png" width="15px">
+                <img class="link_cedopal2" src="img/CEDOPAL_wg.png" width="110px">
+            </div>
+        </a>
+
+        <h1>e-Papyrus</h1>
+        <h2 id="titre_index"></h2>
+        <p id="descriptif_index"></p>
+
+        <div class="img_container">
+            <img class="img_papyrus" src="img/index.png" width="730px">
+        </div>
+
+        <div class="about">
+            <a id="link_about" href="about.html"></a>    
+        </div>
+
+        <a class="link_bibli" href="#bibli" target="_blank">
+            <div class="bibli">
+                <a id="link_bibli" href="#link"></a>
+                <img class="arrow_icon" src="img/arrow_icon.png" width="46px">
+            </div>
+        </a>
+
+
+    </div>
+
+    <footer>
+        <a href="http://web.philo.ulg.ac.be/cedopal/" target="_blank">
+            <img src="img/CEDOPAL_bg.png" alt="Cedopal" width="254px">
+        </a>
+
+        <div class="footer_links_wrapper">
+            <div class="footer_links">
+                <a class="link" href="index.html" id="menu1_footer"></a>
+                <a class="link" href="#link" id="menu2_footer"></a>
+                <a class="link" href="about.html" id="menu3_footer"></a>
+                <a class="link" href="rights.html" id="menu4_footer"></a>
+            </div>
+        </div>
+
+        <a href="https://www.uliege.be/cms/c_8699436/fr/uliege" target="_blank">
+            <img src="img/uliege.png" alt="University of Liège" width="178px">
+        </a>
+    </footer>
+
+</body>
+
+</html>

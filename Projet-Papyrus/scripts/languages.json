@@ -1,0 +1,42 @@
+{
+    "fr": {
+        "menu1_header": "Home",
+        "menu2_header": "Bibliothèque",
+        "menu3_header": "À propos",
+        "menu4_header": "Droits",
+        "titre_index": "Reconstitutions Virtuelles de <br> Papyrus Grecs et Latins",
+        "descriptif_index": "description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "link_about": "En savoir plus",
+        "link_bibli": "Découvrez la bibliothèque",
+        "menu1_footer": "Home",
+        "menu2_footer": "Bibliothèque",
+        "menu3_footer": "À propos",
+        "menu4_footer": "Droits",
+        "titre_about": "À propos" ,
+        "descriptif_about": "description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "info_about": "description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "titre_rights": "Droits d'utilisation",
+        "descriptif_rights": "description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "sous_titre_rights": "Bibliothèques utilisées"
+    },
+    "en": {
+        "menu1_header": "Home",
+        "menu2_header": "Library",
+        "menu3_header": "About",
+        "menu4_header": "Rights",
+        "titre_index": "Digital Reconstructions of <br> Greek and Latin Papyri",
+        "descriptif_index": "project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "link_about": "More information",
+        "link_bibli": "Discover the library",
+        "menu1_footer": "Home",
+        "menu2_footer": "Library",
+        "menu3_footer": "About",
+        "menu4_footer": "Rights",
+        "titre_about": "About",
+        "descriptif_about": "project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "info_about": "project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio. description du projet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "titre_rights": "Rights of use",
+        "descriptif_rights": "Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices eros vitae odio bibendum aliquet. Proin quis massa odio.",
+        "sous_titre_rights": "Libraries used"
+    }
+}

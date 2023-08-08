@@ -1,0 +1,234 @@
+body {
+    background-color: #EEEAE3;
+    margin: 0 83px 0 83px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header > a:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main{
+  position: relative;
+  font-family: "Lusitana", sans-serif;
+  z-index: 1;
+}
+.link_cedopal{
+  margin: 50px 0 20px 0;
+  display: flex;
+  align-items: center;
+  width: 141.462px;
+  height: 29px;
+  background-color: #D78A3F;
+  border-radius: 32px;
+}
+.link_cedopal1{
+  margin-left: 10px;
+}
+.link_cedopal2{
+  margin-left: 5px;
+}
+h1{
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0;
+}
+#descriptif_about{
+  font-size: 28px;
+  color: #808080;
+  width: 580px;
+}
+.img_papyrus{
+  position: absolute;
+  left: 45vw;
+  right: 50px;
+  top: 0px;
+  z-index: -1;
+}
+.info{
+  position: relative;
+  height: 80vh;
+}
+.info p{
+  margin: 400px auto 80px auto;
+  width: 973px;
+  text-align: justify;
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+  z-index: 1;
+}
+.info img{
+  position: absolute;
+  z-index: -1;
+}
+.about_img1{
+  top: -50px;
+  left: 5vw;
+}
+.about_img2{
+  bottom: 200px;
+  right: 10vw;
+}
+
+footer{
+  margin: 100px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer_links{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer_links a{
+  color: #5F5E5B;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+:root {
+    --primColor: #EEEAE3;
+    --secoColor: #555555;
+    --cornerRad: 4px;
+  }
+  body {
+    background-color: var(--primColor);
+  }
+  details {
+    margin: 40px;
+    margin-left: 0px;
+    font-family: "Archivo", sans-serif;
+    font-size: 20px;
+  }
+  summary {
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 12px 10px;
+    width: 23px;
+    height: 17px;
+    border: 2px solid var(--secoColor);
+    border-radius: var(--cornerRad);
+    color: var(--secoColor);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: transform 200ms ease-in-out 0s;
+  }
+  summary::before,
+  summary::after {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  summary::before {
+    content: "";
+  }
+  summary::after {
+    content: "III";
+    letter-spacing: -1px;
+  }
+  summary:hover {
+    transform: scale(1.1);
+  }
+  summary::marker {
+    font-size: 0;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] .menu {
+    animation-name: menuAnim;
+  }
+  details[open] summary::before {
+    content: "X";
+  }
+  details[open] summary::after {
+    content: "";
+  }
+  .menu {
+    position: absolute;
+    height: 0;
+    width: 200px;
+    border-radius: var(--cornerRad);
+    background-color: var(--primColor);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: closeMenu 300ms ease-in-out forwards;
+    z-index: 2;
+  }
+  .menu a {
+    padding: 12px 24px;
+    margin: 0 16px;
+    color: var(--secoColor);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+  }
+  .def{
+    cursor: default;
+  }
+  button{
+    cursor: pointer;
+  }
+  .menu a:nth-of-type(1) {
+    padding-top: 24px;
+  }
+  .menu a:nth-last-of-type(1) {
+    border-bottom: none;
+  }
+  .menu .link:hover {
+    filter: brightness(200%);
+  }
+  details::before {
+    color: var(--secoColor);
+    position: absolute;
+    margin-left: 80px;
+    padding: 10px 10px;
+    opacity: 0.4;
+  }
+  details[open]::before {
+    animation: fadeMe 300ms linear forwards;
+  }
+  @keyframes menuAnim {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 312px;
+    }
+  }
+  @keyframes fadeMe {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
