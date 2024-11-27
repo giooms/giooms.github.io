@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advent Calendar</title>
+  <!-- Load external Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sonsie+One|Quicksand|Nunito|Varela+Round|Averia+Serif+Libre" />
+  <!-- Load local Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Add ReactJS via CDN -->
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Create simple React container -->
+  <div id="react-container"></div>
+
+
+<!-- ========================= BEGIN COPEPEN CODE ========================= -->
+<header>
+<nav class="main-menu">
+  <span class="logo">
+    <img src="">
+  </span>
+  <hgroup class="page-title">
+    <h1>Advent Calendar</h1>
+  </hgroup>
+  <ul class="menu">
+    <li class="about-link">About</li>
+    <li class="notes-link">Notes</li>
+  </ul>
+</nav>
+</header>
+
+<section class="notes hidden">
+  <span class="close-notes">x</span>
+  <div class="about">
+    <p>Coming soon!</p>
+  </div>
+  <div class="design-notes">
+  <ol>
+    <li><a href="http://www.schillmania.com/projects/snowstorm/">Let</a> <a href="http://loktar00.github.io/JQuery-Snowfall/">it</a> <a href="https://www.madebymagnitude.com/blog/7-ideas-to-spice-up-your-website-this-christmas/">snow</a> <i class="fa fa-check" aria-hidden="true"></i></li>
+    <li><a href="http://color.adobe.com">Choose color palette</a> <i class="fa fa-check" aria-hidden="true"></i></li>
+    <li><del><a href="http://codepen.io/seanmccaffery/pen/xBpbG">Cool title hover effect?</a></del></li>
+    <li><a href="http://codepen.io/SitePoint/pen/dppJzX">Tilted Angled lines?</a></li>
+    <li><a href="http://demo.iprodev.com/christmas/">Cool Landing Page design</a></li>
+    <li>Make <a href="https://santatracker.google.com/village.html">vector</a> <a href="http://xmas.sitepoint.com/#day/1">background</a></li>
+    <li>Or, draw CSS Christmas shapes (presents) <i class="fa fa-check" aria-hidden="true"></i></li>
+    <li><a href="http://xmas.sitepoint.com/#day/1">Scroll</a> <a href="http://www.polishchristmasguide.com/">right</a> or pop out like PPT or <a href="http://pepsized.com/merry-scrolling-with-skrollr-js/">do something with scroll</a> <i class="fa fa-check" aria-hidden="true"></i> fix 5px error</li>
+    <li>When click present, it slides to the center and opens, click away, slides back in place and closes</li>
+    <li>Make each <a href="https://24ways.org/">section</a> open a <a href="http://uxmas.com/2016/a-miracle-at-christmas/">blog post</a></li>
+    <li>Use <a href="http://codepen.io/krogsgard/pen/NRBqPp">WP API</a> to load Posts</li>
+    <li>Create Christmas icons and <a href="https://github.com/alexk111/SVG-Morpheus">morph them</a></li>
+  </ol>
+  </div>
+</section>
+
+<main>
+  <aside class="countdown-clock">
+    <ul id="countdown">
+      <li id="days">
+        <div class="number">00</div>
+        <div class="label">Days</div>
+        <svg width="100" height="100" class="pie-plate">
+          <circle r="50" cx="50" cy="50" class="pie" />
+        </svg>
+      </li>
+      <li id="hours">
+        <div class="number">00</div>
+        <div class="label">Hours</div>
+        <svg width="100" height="100" class="pie-plate">
+          <circle r="50" cx="50" cy="50" class="pie" />
+        </svg>
+      </li>
+      <li id="minutes">
+        <div class="number">00</div>
+        <div class="label">Minutes</div>
+        <svg width="100" height="100" class="pie-plate">
+          <circle r="50" cx="50" cy="50" class="pie" stroke-dasharray="10"/>
+        </svg>
+      </li>
+      <li id="seconds">
+        <div class="number">00</div>
+        <div class="label">Seconds</div>
+        <svg width="100" height="100" class="pie-plate">
+          <circle r="50" cx="50" cy="50" class="pie" />
+        </svg>
+      </li>
+    </ul>
+    <p>Remaining 'til Christmas <span class="this-year"></span></p>
+  </aside>
+
+  <div class="controls">
+    <div class="prev">
+      <i class="fa fa-5x fa-angle-left"></i>
+    </div>
+    <div class="next">
+      <i class="fa fa-5x fa-angle-right"></i>
+    </div>
+  </div>
+
+<div id="carousel">
+  <a id="day-1"></a>
+  <a id="day-2"></a>
+  <a id="day-3"></a>
+  <a id="day-4"></a>
+  <a id="day-5"></a>
+  <a id="day-6"></a>
+  <a id="day-7"></a>
+  <a id="day-8"></a>
+  <a id="day-9"></a>
+  <a id="day-10"></a>
+  <a id="day-11"></a>
+  <a id="day-12"></a>
+  <a id="day-13"></a>
+  <a id="day-14"></a>
+  <a id="day-15"></a>
+  <a id="day-16"></a>
+  <a id="day-17"></a>
+  <a id="day-18"></a>
+  <a id="day-19"></a>
+  <a id="day-20"></a>
+  <a id="day-21"></a>
+  <a id="day-22"></a>
+  <a id="day-23"></a>
+  <a id="day-24"></a>
+  <a id="day-25"></a>
+<div id="container">
+<div id="inner">
+<section id="day1" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">1<span>st</span></h1>
+  </div>
+</section>
+
+<section id="day2" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">2<span>nd</span></h1>
+  </div>
+</section>
+
+<section id="day3" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">3<span>rd</span></h1>
+  </div>
+</section>
+
+<section id="day4" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">4<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day5" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">5<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day6" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">6<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day7" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">7<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day8" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">8<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day9" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">9<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day10" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">10<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day11" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">11<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day12" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">12<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day13" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">13<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day14" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">14<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day15" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">15<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day16" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">16<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day17" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">17<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day18" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">18<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day19" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">19<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day20" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">20<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day21" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">21<span>st</span></h1>
+  </div>
+</section>
+
+<section id="day22" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">22<span>nd</span></h1>
+  </div>
+</section>
+
+<section id="day23" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">23<span>rd</span></h1>
+  </div>
+</section>
+
+<section id="day24" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">24<span>th</span></h1>
+  </div>
+</section>
+
+<section id="day25" class="day active">
+  <div class="present">
+    <span class="bow"></span>
+    <span class="ribbon"></span>
+    <h1 class="present-title">25<span>th</span></h1>
+  </div>
+</section>
+
+</div><!-- #inner -->
+</div><!-- #container -->
+</div><!-- #carousel -->
+</main>
+
+<footer>
+  <ul id="index" class="day-list">
+    <li><a href="#day-1"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>1</span></a></li>
+    <li><a href="#day-2"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>2</span></a></li>
+    <li><a href="#day-3"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>3</span></a></li>
+    <li><a href="#day-4"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>4</span></a></li>
+    <li><a href="#day-5"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>5</span></a></li>
+    <li><a href="#day-6"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>6</span></a></li>
+    <li><a href="#day-7"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>7</span></a></li>
+    <li><a href="#day-8"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>8</span></a></li>
+    <li><a href="#day-9"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>9</span></a></li>
+    <li><a href="#day-10"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>10</span></a></li>
+    <li><a href="#day-11"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>11</span></a></li>
+    <li><a href="#day-12"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>12</span></a></li>
+    <li><a href="#day-13"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>13</span></a></li>
+    <li><a href="#day-14"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>14</span></a></li>
+    <li><a href="#day-15"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>15</span></a></li>
+    <li><a href="#day-16"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>16</span></a></li>
+    <li><a href="#day-17"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>17</span></a></li>
+    <li><a href="#day-18"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>18</span></a></li>
+    <li><a href="#day-19"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>19</span></a></li>
+    <li><a href="#day-20"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>20</span></a></li>
+    <li><a href="#day-21"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>21</span></a></li>
+    <li><a href="#day-22"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>22</span></a></li>
+    <li><a href="#day-23"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>23</span></a></li>
+    <li><a href="#day-24"><i class="fa fa-3x fa-gift" aria-hidden="true"></i><span>24</span></a></li>
+    <li class="christmas"><a href="#day-25"><i class="fa fa-4x fa-gift" aria-hidden="true"></i><span>25</span></a></li>
+  </ul>
+</footer>
+<!-- ========================= END COPEPEN CODE ========================= -->
+
+<!-- Load external JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="//static.madebymagnitude.com/javascript/jQuery.snow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/axios/0.8.1/axios.min.js"></script>
+
+<!-- Load local JavaScript functions -->
+<script type="text/javascript" src="js/functions.js"></script>
+<!-- Load the JS with our React app -->
+<script type="text/javascript" src="js/app.js"></script>
+
+<!-- Create simple React script -->
+<script type="text/babel">
+  // React Native syntax
+  var MyComponent = React.createClass({
+    render() {
+      return <div>
+          <h1>Hello World</h1>
+          <p>This is my first React component!</p>
+      </div>
+    }
+  })
+
+  // ES6 class syntax
+  // class MyComponent extends React.Component {
+  //   render() {
+  //     return <div>
+  //         <h1>Hello World</h1>
+  //         <p>This is my first React component!</p>
+  //     </div>
+  //   }
+  // }
+
+  // Stateless functional component syntax
+  // const MyComponent = () => {
+  //   return <div>
+  //       <h1>Hello World</h1>
+  //       <p>This is my first React component!</p>
+  //   </div>
+  // }
+  ReactDOM.render( <MyComponent />,
+      document.getElementById('react-container' ) )
+</script>
+
+</body>
+</html>
