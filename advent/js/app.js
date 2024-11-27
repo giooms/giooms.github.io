@@ -1,10 +1,10 @@
 'use strict';
 
-var _react = require('react');
+import _react from 'react';
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = require('react-dom');
+import _reactDom from 'react-dom';
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
