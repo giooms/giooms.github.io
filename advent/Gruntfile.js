@@ -49,24 +49,13 @@ module.exports = function( grunt ) {
      * @link https://babeljs.io/docs/usage/api/
      */
     babel: {
-      dev: {
-        options: {
-          minified: false,
-          sourceMap: false,
-          presets: ['latest', 'react']
-        },
-        files: {
-          "js/app.js": "js/react-app.js"
-        }
+      options: {
+        sourceMap: false,
+        presets: ['@babel/preset-env', '@babel/preset-react']
       },
       dist: {
-        options: {
-          minified: true,
-          sourceMap: false,
-          presets: ['latest', 'react']
-        },
         files: {
-          "js/app.min.js": "js/react-app.js"
+          'js/app.min.js': 'js/app.js'
         }
       }
     },
@@ -82,12 +71,19 @@ module.exports = function( grunt ) {
       js: {
         files: 'js/react-app.js',
         tasks: [ 'babel' ]
-      }
+      },
+      scripts: {
+        files: ['js/app.js'],
+        tasks: ['babel'],
+        options: {
+          spawn: false,
+        },
+      },
     },
   });
   grunt.loadNpmTasks( 'grunt-contrib-sass' );
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
   grunt.loadNpmTasks( 'grunt-autoprefixer' );
   grunt.loadNpmTasks( 'grunt-babel' );
-  grunt.registerTask( 'default', ['watch'] );
+  grunt.registerTask( 'default', ['babel', 'watch'] );
 }
