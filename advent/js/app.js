@@ -1,86 +1,67 @@
 'use strict';
 
-import _react from 'react';
-
-var _react2 = _interopRequireDefault(_react);
-
-import _reactDom from 'react-dom';
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+import React from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 /**
  * REACT app with WP API
  * @link http://mediatemple.net/blog/tips/loading-and-using-external-data-in-react/
  * @link http://codepen.io/krogsgard/pen/NRBqPp
  */
-var Advent = _react2.default.createClass({
-  displayName: 'Advent',
-
-  // Set the initial React state
-  getInitialState: function getInitialState() {
-    return {
+class Advent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       posts: [] // our data setup is expecting Posts
     };
-  },
-  // something
-  componentDidMount: function componentDidMount() {
-    var _th = this;
-    this.serverRequest = axios.get(this.props.source).then(function (result) {
-      _th.setState({
+  }
+
+  componentDidMount() {
+    this.serverRequest = axios.get(this.props.source).then((result) => {
+      this.setState({
         posts: result.data
       });
     });
-  },
+  }
 
-  // Error handling - if Ajax request is still going when React (or you) remove a component, abort Ajax request
-  componentWillUnmount: function componentWillUnmount() {
+  componentWillUnmount() {
     this.serverRequest.abort();
-  },
+  }
 
-  // Render our component!!
-  render: function render() {
-    return _react2.default.createElement(
-      'div',
-      { className: 'post-wrapper' },
-      this.state.posts.map(function (post) {
-        return _react2.default.createElement(
-          'div',
-          { key: post.link, className: 'post' },
-          _react2.default.createElement(
-            'h2',
-            { className: 'post-title' },
-            _react2.default.createElement('a', { href: post.link,
-              dangerouslySetInnerHTML: { __html: post.title.rendered }
-            })
-          ),
-          post.featured_media ? _react2.default.createElement(
-            'a',
-            { href: post.link },
-            _react2.default.createElement('img', { src: post._embedded['wp:featuredmedia'][0].media_details.sizes["large"].source_url })
-          ) : null,
-          post.excerpt.rendered ? _react2.default.createElement('div', { className: 'excerpt', dangerouslySetInnerHTML: { __html: post.excerpt.rendered } }) : null,
-          _react2.default.createElement(
-            'div',
-            { className: 'entry-meta' },
-            _react2.default.createElement(
-              'a',
-              { className: 'author-wrap', href: post._embedded.author[0].link },
-              _react2.default.createElement('img', { className: 'avatar', src: post._embedded.author[0].avatar_urls['48'] }),
-              'by\xA0 ',
-              post._embedded.author[0].name
-            ),
-            _react2.default.createElement(
-              'a',
-              { className: 'button read-more', href: post.link },
-              'Read More \xBB'
-            )
-          )
-        );
-      })
+  render() {
+    return (
+      <div className="post-wrapper">
+        {this.state.posts.map((post) => (
+          <div key={post.link} className="post">
+            <h2 className="post-title">
+              <a href={post.link} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+            </h2>
+            {post.featured_media ? (
+              <a href={post.link}>
+                <img src={post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} />
+              </a>
+            ) : null}
+            {post.excerpt.rendered ? (
+              <div className="excerpt" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+            ) : null}
+            <div className="entry-meta">
+              <a className="author-wrap" href={post._embedded.author[0].link}>
+                <img className="avatar" src={post._embedded.author[0].avatar_urls['48']} />
+                by {post._embedded.author[0].name}
+              </a>
+              <a className="button read-more" href={post.link}>
+                Read More »
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     );
   }
-});
+}
 
-_react2.default.render(_react2.default.createElement(Advent, { source: 'http://aaronsnowberger.com/wp-json/wp/v2/posts/?_embed&categories=764&per_page=3&author=1' }), document.querySelector("#posts"));
+ReactDOM.render(
+  <Advent source="http://aaronsnowberger.com/wp-json/wp/v2/posts/?_embed&categories=764&per_page=3&author=1" />,
+  document.querySelector("#posts")
+);
