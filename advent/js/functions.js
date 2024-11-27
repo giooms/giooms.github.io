@@ -56,7 +56,7 @@ $('.next').click( function() {
  * @link http://codepen.io/chrisjdesigner/pen/dMbmoE
  */
 var thisYear = new Date();
-var thisChristmas = thisYear.getFullYear() + "/12/25 00:00:00";
+var thisChristmas = thisYear.getFullYear() + "2024/12/25 00:00:00";
 var christmas = new Date( thisChristmas ),
     days, hours, mins, secs;
 
@@ -86,6 +86,21 @@ $(function() {
   numberTrans( '#seconds .number', secs, 1000, 'easeOutQuad' );
   // Begin countdown
   setTimeout( countdownTimer, 1001 );
+});
+
+$(document).ready(function() {
+  $('.present').click(function() {
+    // Close other presents
+    $('.present').removeClass('selected');
+    $('.content').hide();
+
+    // Highlight the selected present
+    $(this).addClass('selected');
+
+    // Display the content for the selected day
+    var dayId = $(this).closest('section').attr('id');
+    $('#content-' + dayId).show();
+  });
 });
 
 // function to calc Time to Christmas

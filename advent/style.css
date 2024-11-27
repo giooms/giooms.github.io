@@ -370,6 +370,11 @@ section {
   display: block;
 }
 
+.present.selected {
+  border: 2px solid gold;
+  box-shadow: 0 0 10px gold;
+}
+
 .present h1 {
   position: absolute;
   top: 50%;
