@@ -5,7 +5,7 @@ var adventCalendarMessages = [
     ["Aujourd'hui, un cadeau surprise pour toi en l'honneur de la Saint-Nicolas. 🎁", "Gilles Ooms"],
     ["Bon pour : une journée où tu commandes, et moi j’obéis (dans la limite du raisonnable… ou pas).🫣", "Gilles Ooms"],
     ["Après une journée de Saint-Nicolas, place à une soirée jeux de société et karaoké endiablée à la maison. 🎤", "Gilles Ooms"],
-    ["Ensemble, devenons chefs d’un soir et essayons une nouvelle recette pour éveiller nos papilles. 🍳", "Gilles Ooms"],
+    ["Mettons les mains à la pâte et préparons de délicieux biscuits de Noël. 🍪", "Gilles Ooms"],
     ["La créativité au rendez-vous ! Fabriquons ensemble des décorations de Noël DIY. 🎨", "Gilles Ooms"],
     ["Un quiz juste pour nous, sur nos sujets préférés : prépare-toi à te creuser les méninges ! 🤓", "Gilles Ooms"],
     ["Je te propose un moment de pure détente : une soirée massage relaxante, rien que pour toi. 💆", "Gilles Ooms"],
