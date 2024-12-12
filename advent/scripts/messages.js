@@ -10,7 +10,7 @@ var adventCalendarMessages = [
     ["Un classique de Noël à regarder ensemble pour se plonger dans l'ambiance des fêtes. 📺", "Gilles Ooms"],
     ["Je te propose un moment de pure détente : une soirée massage relaxante, rien que pour toi. 💆", "Gilles Ooms"],
     ["Une soirée comédie musicale pour chanter et rêver ensemble. 🎭", "Gilles Ooms"],
-    ["", "Gilles Ooms"],
+    ["Bon pour : je deviens ton homme à tout faire, tes désirs sont des ordres aujourd'hui 🫡.", "Gilles Ooms"],
     ["Des jeux de société en famille pour partager des rires et des souvenirs précieux. 🎲", "Gilles Ooms"],
     ["Un quiz juste pour nous, sur nos sujets préférés : prépare-toi à te creuser les méninges ! 🤓", "Gilles Ooms"],
     ["SURPRISE ! Be ready to discover a gift 🎁", "Gilles Ooms"],
