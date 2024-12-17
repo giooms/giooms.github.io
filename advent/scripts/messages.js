@@ -15,7 +15,7 @@ var adventCalendarMessages = [
     ["Un quiz juste pour nous, sur nos sujets préférés : prépare-toi à te creuser les méninges ! 🤓", "Gilles Ooms"],
     ["What if on s'accordait du temps ? Prenons la fin de journée pour des moments qui nous font du bien 🥰", "Gilles Ooms"],
     ["Je t'ai préparé une surprise détente pour une soirée spéciale rien que nous deux. 🌙", "Gilles Ooms"],
-    ["Un apéro coloré et des cocktails à découvrir ensemble pour une soirée festive. 🍹", "Gilles Ooms"],
+    ["Atelier réflexion autour des 12 derniers: quels sont nos souvenirs ? 😎", "Gilles Ooms"],
     ["Un moment introspectif : écrivons des lettres à nous-mêmes pour l’année prochaine. ✉️", "Gilles Ooms"],
     ["Voyage culinaire autour du monde avec une soirée cuisine internationale. 🍴", "Gilles Ooms"],
     ["Laissez-vous emporter par des contes de Noël lus à voix haute. 🎄", "Gilles Ooms"],
