@@ -18,7 +18,7 @@ var adventCalendarMessages = [
     ["Atelier réflexion autour des 12 derniers: quels sont nos souvenirs ? 😎", "Gilles Ooms"],
     ["Un moment introspectif : écrivons des lettres à nous-mêmes pour l’année prochaine. ✉️", "Gilles Ooms"],
     ["Prenons du temps à deux et préparons un apéro digne de ce nom 🍾", "Gilles Ooms"],
-    ["Laissez-vous emporter par des contes de Noël lus à voix haute. 🎄", "Gilles Ooms"],
+    ["Let the music play ! Créons une playlist partagée pour mettre du rythme pendant les fêtes 🎵", "Gilles Ooms"],
     ["Une surprise magique t’attend pour une soirée de Noël spéciale. 🎁", "Gilles Ooms"],
     ["Planifions nos rêves : des vacances ou des projets pour l’année prochaine. ✨", "Gilles Ooms"],
     ["Encore une surprise qui promet une journée de Noël mémorable chez maman. 🌟", "Gilles Ooms"],
