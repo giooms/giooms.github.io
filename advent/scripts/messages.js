@@ -21,6 +21,6 @@ var adventCalendarMessages = [
     ["Let the music play ! Créons une playlist partagée pour mettre du rythme pendant les fêtes 🎵", "Gilles Ooms"],
     ["Le premier Noël !! Fêtons cela en écrivant les choses dont nous sommes fiers de cette année 💪.", "Gilles Ooms"],
     ["Planifions nos rêves : des vacances ou des projets pour l’année prochaine. ✨", "Gilles Ooms"],
-    ["Encore une surprise qui promet une journée de Noël mémorable chez maman. 🌟", "Gilles Ooms"],
+    ["Prenons le temps de nous mettre dans le mood de Noël en s'arrêtant plus tôt. 😎", "Gilles Ooms"],
     ["Le jour tant attendu : Noël ensemble chez Bernard pour une soirée pleine de magie et d’amour. 🎅", "Gilles Ooms"]
 ];
