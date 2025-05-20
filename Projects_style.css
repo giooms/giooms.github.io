@@ -299,3 +299,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.more-projects {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.more-projects a {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-projects a:hover {
+  text-decoration: underline;
+}
