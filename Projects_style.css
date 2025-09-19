@@ -171,18 +171,14 @@ body {
   }
   
   .dock .icon:nth-child(7):hover::after {
-    content: 'Twitter';
-  }
-  
-  .dock .icon:nth-child(8):hover::after {
     content: 'Linkedin';
   }
   
-  .dock .icon:nth-child(9):hover::after {
+  .dock .icon:nth-child(8):hover::after {
     content: 'GitHub';
   }
-
-  .dock .icon:nth-child(10):hover::after {
+  
+  .dock .icon:nth-child(9):hover::after {
     content: 'Mail';
   }
   
