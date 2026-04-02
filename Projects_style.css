@@ -163,7 +163,7 @@ body {
   }
   
   .dock .icon:nth-child(4):hover::after {
-    content: 'Writing';
+    content: 'Publications';
   }
   
   .dock .icon:nth-child(5):hover::after {
@@ -307,9 +307,30 @@ body {
 .more-projects a {
   color: #0366d6;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .more-projects a:hover {
   text-decoration: underline;
+}
+
+.research-project {
+  margin-top: 20px;
+  padding: 20px 24px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #2c2c2c;
+  border-radius: 8px;
+}
+
+.research-project h2 {
+  font-family: 'Lusitana', serif;
+  color: #2c2c2c;
+  font-size: 18px;
+  text-align: left;
+  margin: 0 0 12px 0;
+}
+
+.research-project p {
+  margin: 0 0 10px 0;
+  line-height: 1.65;
+  text-align: justify;
 }
